@@ -1,0 +1,16 @@
+总结Git与GitHub使用：
+A.在GitHub端建立repository（仓库）；
+B.在本地建立与GitHub对应的本地文件夹（xx）；
+C.在本地文件xx中，右键点击Git hash；
+D.在Git hash命令窗口输入命令完成对应的操作；
+本地传文件到GitHub上
+    1)在带传文件所在文件上右键点Git hash，弹出命令窗口；
+    2)上传命令：$ git add 文件名（包括后缀），其中文件名字不能有空格、下划线、连接线；
+    3)描述上传（修改）命令：$ git commit -m "描述的内容"
+    4)将文件push到GitHub上命令：
+      $ git push git@github.com:SnailQueen/xxx.git
+    5)此时可以在GitHub上看到传上去的文件，以及文件的说明。
+将GitHub上的文件同步到本地电脑上
+    1)在带传文件所在文件上右键点Git hash，弹出命令窗口；
+    2)命令：
+      $ git pull git@github.com: SnailQueen/xxx.git
